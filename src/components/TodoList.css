@@ -1,0 +1,73 @@
+/* TodoList.css */
+
+.todo-list {
+    font-family: Arial, sans-serif;
+  }
+  
+  .todo-list h1 {
+    color: #333;
+    text-align: center; /* Center-align the heading */
+  }
+  
+  /* Table Styles */
+  .todo-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0; 
+  }
+  
+  /* Table Header Styles */
+  .todo-table th {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  /* Table Body Styles */
+  .todo-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  /* Alternate Row Styles */
+  .todo-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray background for even rows */
+    box-shadow: 2px 10px 17px #f4e2d8
+  }
+  
+  /* Completed Item Styles */
+  .todo-item.completed td {
+    background: #73C8A9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #373B44, #73C8A9); 
+    background: linear-gradient(to right, #373B44, #73C8A9); 
+
+  }
+  
+  /* Incomplete Item Styles */
+  .todo-item.incomplete td {
+    background: #000000;  
+    background: -webkit-linear-gradient(to right, #e74c3c, #000000); 
+    background: linear-gradient(to right, #e74c3c, #000000); 
+    color: white;
+  }
+  
+  /* Button Styles */
+.todo-list button {
+    background-color: #00796B; 
+    color: #ffffff; /* White text color */
+    border: none;
+    padding: 10px 20px; 
+    cursor: pointer;
+    border-radius: 5px; 
+    font-size: 16px; 
+    transition: background-color 0.3s, transform 0.2s; 
+  }
+  
+  .todo-list button:hover {
+    background-color: #005A4E; /* Darker teal background color on hover */
+    transform: scale(1.05); /* Scale the button slightly on hover */
+  }
+  
+  
